@@ -17,4 +17,8 @@ public final class JsonUtil {
     public static <T> List<T> getObjects(String body, Type type) {
         return new Gson().fromJson(body, type);
     }
+
+    public static String toJson(Object o) {
+        return new Gson().toJson(o);
+    }
 }
