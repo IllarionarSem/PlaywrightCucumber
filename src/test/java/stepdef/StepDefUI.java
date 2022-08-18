@@ -1,6 +1,7 @@
 package stepdef;
 
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import lombok.extern.slf4j.Slf4j;
 import model.Book;
@@ -12,9 +13,9 @@ import java.util.List;
 @Slf4j
 public class StepDefUI extends BaseStep {
 
+    @Before
     public void beforeAll() {
         log.info("Set up");
-        log.info("Thread ID: " + Thread.currentThread().getId());
         super.startUp();
     }
 
