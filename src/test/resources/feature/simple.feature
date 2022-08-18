@@ -4,10 +4,10 @@ Feature: Simple feature file
     Given User open challenging dom page
     Then Print table objects
 
-#  Scenario: Handle Elements list example
-#    Given User open EBay page
-#    When User navigates to popular category 'Born Pretty'
-#    Then Print section items
+  Scenario: Handle Elements list example
+    Given User open EBay page
+    When User navigates to popular category 'Born Pretty'
+    Then Print section items
 
   Scenario: Handel DataTable with ModelHandler
     Given get book as list

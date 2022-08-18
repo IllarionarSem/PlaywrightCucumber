@@ -1,8 +1,8 @@
 Feature: Simple feature file
 
-#  Scenario: Handle Table with ModelHandler
-#    Given User open challenging dom page
-#    Then Print table objects
+  Scenario: Handle Table with ModelHandler
+    Given User open challenging dom page
+    Then Print table objects
 
   Scenario: Handle Elements list example
     Given User open EBay page

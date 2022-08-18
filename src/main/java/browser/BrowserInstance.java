@@ -48,10 +48,4 @@ public class BrowserInstance {
         return new Browser.NewContextOptions()
                 .setColorScheme(ColorScheme.DARK);
     }
-
-    public void close() {
-        if (Objects.nonNull(playwright)) {
-            playwright.close();
-        }
-    }
 }
