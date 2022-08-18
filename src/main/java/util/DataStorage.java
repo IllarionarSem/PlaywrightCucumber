@@ -18,8 +18,4 @@ public final class DataStorage {
     public static void put(String key, Object o) {
         storage.get().put(key, o);
     }
-
-    public static void unload() {
-        storage.remove();
-    }
 }
