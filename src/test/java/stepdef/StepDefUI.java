@@ -4,6 +4,7 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import lombok.extern.slf4j.Slf4j;
 import model.Book;
+import model.row.BookRow;
 import util.ModelHandler;
 
 import java.util.List;
