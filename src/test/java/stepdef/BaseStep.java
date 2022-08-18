@@ -2,7 +2,6 @@ package stepdef;
 
 import browser.BrowserInstance;
 import com.microsoft.playwright.Page;
-import lombok.Getter;
 
 public abstract class BaseStep {
 
