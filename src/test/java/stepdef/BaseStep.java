@@ -5,17 +5,17 @@ import com.microsoft.playwright.Page;
 
 public abstract class BaseStep {
 
-    private static final ThreadLocal<BrowserInstance> browserInstance = ThreadLocal.withInitial(BrowserInstance::getInstance);
+    private final ThreadLocal<BrowserInstance> browserInstance = ThreadLocal.withInitial(BrowserInstance::getInstance);
 
     public void startUp() {
         browserInstance.get().initiate();
     }
 
-    public static Page getPage() {
+    public Page getPage() {
         return browserInstance.get().getPage();
     }
 
-    public static BrowserInstance getBrowserInstance() {
+    public BrowserInstance getBrowserInstance() {
         return browserInstance.get();
     }
 }
